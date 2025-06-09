@@ -61,7 +61,7 @@
 #history h2 {
   font-family: var(--font-heading);
   color: var(--secondary-color);
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   margin-bottom: var(--space-lg);
   position: relative;
   grid-column: 1 / -1;
@@ -138,7 +138,7 @@
 #history-assembly h2 {
   font-family: 'Cinzel', serif;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   color: #333;
   margin-bottom: 20px;
   text-align: center;
@@ -169,7 +169,7 @@
 
 .history-item p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 15px;
   color: #555;
   text-align: center;
@@ -200,6 +200,10 @@
 }
 
 @media (max-width: 768px) {
+  .body {
+    padding: 3rem;
+
+  }
   #history h2 {
     font-size: 2.8rem;
   }

@@ -1,7 +1,8 @@
 /* Academics Page Styles */
 .body {
-    padding-top: 8rem; /* Account for fixed header */
-    max-width: 1400px;
+    padding-top: 8rem;
+    /* Account for fixed header */
+    max-width: var(--max-width);
     margin: 0 auto;
     margin-top: 8rem;
     padding: var(--space-xl) var(--space-xl);
@@ -9,8 +10,8 @@
 
 /* Hero Section */
 .first_photo {
-    background: linear-gradient(rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), 
-                url('../assets/images/library.png') center/cover no-repeat;
+    background: linear-gradient(rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)),
+        url('../assets/images/library.png') center/cover no-repeat;
     height: 50vh;
     min-height: 400px;
     display: flex;
@@ -157,12 +158,11 @@
     font-size: 2.4rem;
     margin-bottom: var(--space-md);
 }
-
-.talk_one_block hr {
+ hr {
     border-bottom: 5px var(--primary-color) dotted;
     width: 80%;
     margin: 0px auto;
-    background:  white;
+    background: white;
     color: white;
     margin-bottom: var(--space-lg);
 }
@@ -219,14 +219,37 @@
 }
 
 /* Delay animations for each image */
-.photos img:nth-child(1) { animation-delay: 0.1s; }
-.photos img:nth-child(2) { animation-delay: 0.2s; }
-.photos img:nth-child(3) { animation-delay: 0.3s; }
-.photos img:nth-child(4) { animation-delay: 0.4s; }
-.photos img:nth-child(5) { animation-delay: 0.5s; }
-.photos img:nth-child(6) { animation-delay: 0.6s; }
-.photos img:nth-child(7) { animation-delay: 0.7s; }
-.photos img:nth-child(8) { animation-delay: 0.8s; }
+.photos img:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.photos img:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.photos img:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.photos img:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.photos img:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.photos img:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.photos img:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.photos img:nth-child(8) {
+    animation-delay: 0.8s;
+}
 
 /* Courses Tables */
 .table_courses {
@@ -284,19 +307,204 @@ td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+
+/* Honors */
+/* Honors List Styles */
+.honors-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+.honors-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+}
+
+.honors-title {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    margin-bottom: var(--space-md);
+}
+
+.honors-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #fb8357;
+}
+
+.honors-intro {
+    text-align: center;
+    font-size: 1.41rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.honors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.honoree {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.honoree:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.honoree-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222;
+    flex: 1;
+    min-width: 250px;
+}
+
+.honoree-details {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 250px;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #fb8357;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .honors-container {
+        padding: 2rem;
+    }
+
+    .honors-title {
+        font-size: 1.8rem;
+    }
+
+    .honors-intro {
+        font-size: 1rem;
+    }
+
+    .honoree {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .honoree-name,
+    .honoree-details {
+        min-width: 100%;
+    }
+}
+
+/* Skills Section Styles */
+.skills-section {
+    background-color: #fff;
+    padding: 4rem 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-title {
+    font-family: Cinzel;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-intro {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background-color: #fb8357;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 1.8rem;
+    }
+
+    .skills-intro {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Animations */
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    from { 
+    from {
         opacity: 0;
         transform: translateY(20px);
     }
-    to { 
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
@@ -307,15 +515,15 @@ td {
     .first_photo {
         height: 40vh;
     }
-    
+
     .photo_talk h2 {
         font-size: 3rem;
     }
-    
+
     .photo_talk p {
         font-size: 1.6rem;
     }
-    
+
     .table_courses {
         grid-template-columns: 1fr;
     }
@@ -326,30 +534,30 @@ td {
         height: 35vh;
         min-height: 300px;
     }
-    
+
     #menu_btn {
         display: flex;
     }
-    
+
     .menu_page {
         display: none;
         flex-direction: column;
         gap: var(--space-sm);
         padding-top: var(--space-md);
     }
-    
+
     .menu_page.active {
         display: flex;
     }
-    
+
     .material-symbols-outlined {
         transition: var(--transition-normal);
     }
-    
+
     .material-symbols-outlined.active {
         transform: rotate(90deg);
     }
-    
+
     .photos {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
@@ -360,15 +568,15 @@ td {
         height: 30vh;
         min-height: 250px;
     }
-    
+
     .photo_talk h2 {
         font-size: 2.4rem;
     }
-    
+
     .photo_talk p {
         font-size: 1.4rem;
     }
-    
+
     .photos {
         grid-template-columns: 1fr;
     }

@@ -17,13 +17,13 @@
 
 .contact-header h1 {
     font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
 .contact-header p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #666;
 }
 
@@ -75,6 +75,7 @@
 
 .contact-info p {
     margin: 0.3rem 0 0;
+    font-size: 1.4rem;
     color: #666;
 }
 
@@ -113,7 +114,7 @@
 
 .time-note {
     grid-column: 1 / -1;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #888;
     margin-top: 1rem;
     font-style: italic;
@@ -125,9 +126,10 @@
 }
 
 .founders-title {
+    font-family: Cinzel;
     text-align: center;
     color: #333;
-    font-size: 1.8rem;
+    font-size: 3.2rem;
 }
 
 .founders-grid {
