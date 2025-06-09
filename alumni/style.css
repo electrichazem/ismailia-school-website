@@ -1,0 +1,150 @@
+
+.body {
+    padding-top: 8rem; /* Account for fixed header */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding-bottom: var(--space-xl);
+}
+
+
+/* Hero Section */
+.first_photo {
+    background: linear-gradient(rgba(46, 49, 65, 0.7), rgba(46, 49, 65, 0.7)), 
+                url('../assets/images/alumni.png') center/cover no-repeat;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-xl);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-out;
+}
+
+.photo_talk {
+    text-align: center;
+    color: var(--light-color);
+    padding: var(--space-lg);
+    max-width: 800px;
+    animation: slideUp 0.8s ease-out;
+}
+
+.photo_talk h2 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    margin-bottom: var(--space-md);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*  */
+/* Alumni Section Styles */
+.alumni-section {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alumni-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.university-logo {
+  padding: 1.5rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.university-logo img {
+  max-width: 150px;
+  max-height: 60px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.student-profile {
+  padding: 1.5rem;
+}
+
+.student-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1rem;
+}
+
+.student-name {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 1rem;
+  font-size: 12px;
+  padding: 0 1rem;
+}
+
+/* Multi-student card styles */
+.multi-student .students-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.multi-student .student-profile {
+  padding: 0.5rem;
+}
+
+.multi-student .student-photo {
+  width: 80px;
+  height: 80px;
+  border-width: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .alumni-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-section {
+    padding: 2rem 1rem;
+  }
+  
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+}

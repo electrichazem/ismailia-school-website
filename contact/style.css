@@ -1,0 +1,183 @@
+
+.contact-page {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-header {
+    margin-top: 8rem;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.contact-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.contact-method:hover {
+    background-color: #facc72;
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #facc72;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.contact-info h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 0.3rem 0 0;
+    color: #666;
+}
+
+.hours-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #facc72;
+    padding-bottom: 0.5rem;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.hour-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    font-weight: 500;
+}
+
+.time {
+    color: #666;
+}
+
+.time-note {
+    grid-column: 1 / -1;
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.founders-section {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+}
+
+.founders-title {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.founder-card {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 3px solid #facc72;
+}
+
+.founder-name {
+    font-weight: 600;
+    margin: 0.2rem 0;
+    color: #333;
+}
+
+.founder-title {
+    margin: .5rem;
+    font-size: 1.2rem;
+}
+
+.founder-email {
+    color: #666;
+    word-break: break-all;
+    margin: .5rem 0;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .contact-page {
+        grid-template-columns: 1fr;
+    }
+
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
+}

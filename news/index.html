@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Ismailia - News</title>
+    <meta name="description"
+        content="Discover Ismailia STEM High School - a premier institution fostering innovation in science, technology, engineering, and mathematics.">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="Assets/STEMIsmailia.png" as="image">
+
+    <!-- Consolidated CSS imports -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Constants -->
+    <link href="../assets/constants/main.css" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header ">
+        <div class="header__brand">
+            <img class="header__logo" src="../assets/logo.png"/>
+            <h1 class="header__title">STEM Ismailia High School</h1>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="hamburger"></span>
+        </label>
+
+        <nav class="header__nav">
+            <ul class="nav-list">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/overview/" class="nav-link ">Overview</a></li>
+                <li><a href="/academics/" class="nav-link">Academics</a></li>
+                <li><a href="/extracurriculars/" class="nav-link">Extracurriculars</a></li>
+                <li><a href="/history/" class="nav-link">History</a></li>
+                <li><a href="/alumni/" class="nav-link">Alumni</a></li>
+                <li><a href="/news/" class="nav-link active">News</a></li>
+                <li><a href="/contact/" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">News</h1>
+                <p class="hero-subtitle">Don't miss out on our exclusive events</p>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <article class="news-article">
+            <div class="article-container">
+                <div class="article-content">
+                    <time datetime="2025-05-14" class="article-date">May 14th 2025</time>
+                    <h2 class="article-title">"THE SWAMP" Play Presented by Ismailia STEM Drama Club</h2>
+                    <p class="article-lead">Ismailia STEM High School has hosted a play powered by Ismailia STEM Drama
+                        Club called The Swamp. Our talented students performed the play in partnership with Gharbia STEM
+                        MUN, creating a tremendous success that showcased the expressive abilities of Ismailia STEM's
+                        most creative students.</p>
+
+                    <aside class="cta-box">
+                        <h3 class="cta-title">Curious About the Play?</h3>
+                        <p class="cta-text">You can now watch it from your place by visiting our play drive</p>
+                        <a href="https://drive.google.com/drive/folders/1iyP6cSLjiDf7CRO-Z2nxoT2Fr0X_Tl0f?usp=drive_link"
+                            class="cta-button">Click Here to Watch <i class="fas fa-arrow-right"></i></a>
+                    </aside>
+                </div>
+
+                <div class="article-gallery">
+                    <div class="gallery-item">
+                        <img src="../assets/images/news/1.png" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/news/2.png" />
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/images/news/3.png" />
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+        <footer class="site-map">
+        <div class="site-map-container">
+            <div class="map-left">
+                <h2>Site map</h2>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/overview/">Overview</a></li>
+                    <li><a href="/academics/">Academics</a></li>
+                    <li><a href="/activities/">Extracurriculars</a></li>
+                    <li><a href="/capstone/">History</a></li>
+                    <li><a href="/alumni/">Alumni</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="map-center">
+                <img src="../assets/logo.png" alt="Logo" class="map-logo">
+                <h3>Ismailia STEM High School</h3>
+                <p>Ismailia STEM High School provides exceptional educational system for academically gifted students.
+                </p>
+            </div>
+            <div class="map-right">
+                <h4>Contact Us</h4>
+                <div class="map-icons">
+                    <a href="https://www.facebook.com/share/1LkgyhhW2F/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="tel:+20643119610" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:ismliasch@stemismailia.moe.edu.eg" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://maps.app.goo.gl/1MXQDzgTwZy8N5sc6" aria-label="Location"><i class="fas fa-map-marker-alt"></i></a>
+                </div>
+                <p class="map-address">Next to the Security Forces, Educational Complex - Egypt Road, Ismailia Road,
+                    41511ED Students.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2015–2025 All Rights Reserved
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Constants -->
+    <script href="../assets/constants/main.js"></script>
+</body>
+
+</html>

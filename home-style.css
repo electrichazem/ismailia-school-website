@@ -1,0 +1,127 @@
+main {
+    padding-top: 8rem;
+    /* Account for fixed header */
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: var(--space-xl) var(--space-xl);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: var(--space-xl) 0px var(--space-xl) 0px;
+}
+
+.home-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.home-hero img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Block sections */
+.block {
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.block.white {
+    background-color: white;
+}
+
+/* Typography */
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero h2 {
+    color: white;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.hero .cta-button {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.hero .cta-button:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+/* Alumni section */
+.alumni-map {
+    text-align: center;
+}
+
+.alumni-map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .home-hero {
+        flex-direction: column;
+    }
+
+    .home-hero img {
+        width: 100%;
+        order: -1;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
