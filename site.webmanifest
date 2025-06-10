@@ -1,0 +1,25 @@
+{
+  "name": "Ismailia STEM High School",
+  "short_name": "STEM Ismailia",
+  "description": "Premier STEM education for gifted students in Ismailia, Egypt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fb8357",
+  "icons": [
+     {
+            "src": "/assets/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+  ],
+  "categories": ["education", "school", "stem"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "orientation": "portrait-primary"
+}

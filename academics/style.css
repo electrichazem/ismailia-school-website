@@ -152,7 +152,7 @@
     transform: translateY(-3px);
 }
 
-.talk_one_block h3 {
+.talk_one_block h2 {
     font-family: var(--font-heading);
     color: var(--secondary-color);
     font-size: 2.4rem;
@@ -328,17 +328,6 @@ td {
     color: var(--secondary-color);
     font-size: 2.4rem;
     margin-bottom: var(--space-md);
-}
-
-.honors-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background-color: #fb8357;
 }
 
 .honors-intro {

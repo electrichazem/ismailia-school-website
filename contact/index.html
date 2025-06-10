@@ -2,10 +2,71 @@
 <html lang="en">
 
 <head>
+    <!-- Preconnect to Google domains for better performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRERH9EFJ4" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SRERH9EFJ4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEM Ismailia - Contact Us</title>
-    <meta name="description" content="Contact Ismailia STEM High School for inquiries and information.">
+    <title>Ismailia STEM High School - Contact Us</title>
+    <meta name="description"
+        content="Get in touch with Ismailia STEM High School! Admissions, partnerships, and visitor inquiries. We’d love to hear from you.">
+    <meta name="keywords" content="STEM school contact Egypt, admissions info, visit Ismailia STEM">
+    <meta name="author" content="Ismailia STEM High School">
+    <link rel="canonical" href="https://www.ismailiastemhighschool.org/contact/" />
+
+    <!-- Open Graph / Facebook (Social Media Sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ismailiastemhighschool.org/contact/">
+    <meta property="og:title" content="Ismailia STEM High School | Contact Us">
+    <meta property="og:description"
+        content="Get in touch with Ismailia STEM High School! Admissions, partnerships, and visitor inquiries. We’d love to hear from you.">
+    <meta property="og:image" content="https://www.ismailiastemhighschool.org/assets/images/school-building.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ismailia STEM High School | Contact Us">
+    <meta name="twitter:description"
+        content="Get in touch with Ismailia STEM High School! Admissions, partnerships, and visitor inquiries. We’d love to hear from you.">
+    <meta name="twitter:image" content="https://www.ismailiastemhighschool.org/assets/images/school-building.png">
+
+    <!-- Favicon & Mobile Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Ismailia STEM High School | Contact Us",
+  "url": "https://www.ismailiastemhighschool.org/contact/",
+  "description": "Get in touch with Ismailia STEM High School! Admissions, partnerships, and visitor inquiries. We’d love to hear from you.",
+  "mainEntity": {
+    "@type": "EducationalOrganization",
+    "name": "Ismailia STEM High School",
+    "logo": "https://www.ismailiastemhighschool.org/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Next to the Security Forces, Educational Complex",
+      "addressLocality": "Ismailia",
+      "addressCountry": "Egypt"
+    },
+    "telephone": "+20643498610",
+    "sameAs": [
+      "https://www.facebook.com/ismailiastem"
+    ]
+  }
+}
+</script>
 
     <!-- Preload critical resources -->
     <link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
@@ -28,7 +89,7 @@
 <body>
     <header class="header ">
         <div class="header__brand">
-            <img class="header__logo" src="../assets/logo.png"/>
+            <img class="header__logo" src="../assets/logo.png" />
             <h1 class="header__title">Ismailia STEM High School</h1>
         </div>
 
@@ -96,7 +157,7 @@
                     <div class="contact-info">
                         <h3>Visit us</h3>
                         <p>Next to the Security Forces, Educational Complex - Egypt Road, Ismailia Road.
-</p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -158,10 +219,37 @@
                     <img src="../assets/images/ahmed-hassan.jpg" alt="Founder 3" class="founder-image">
                     <h3 class="founder-name">Ahmed Hassan</h3>
                     <h3 class="founder-title">UI/UX Designer</h3>
-                    <p class="founder-email">rokaya.1@stemismailia.edu</p>
+                    <p class="founder-email">ahmmeedhaassan@gmail.com</p>
                 </div>
 
             </div>
+        </div>
+    </div>
+
+    <div class="acknowledgment-frame">
+        <div class="acknowledgment-container">
+            <div class="header-box">
+                <h2>ACKNOWLEDGMENT</h2>
+            </div>
+            <p class="description">
+                We proudly thank everyone who contributed to making the Ismailia STEM High School website a reality.
+                Your hard work built more than a website; you built a legacy for our school.
+            </p>
+
+            <div class="contributions">
+                <strong>We recognize the following individuals for their contributions:</strong>
+                <ul>
+                    <li><strong>Hazem Emad</strong> – Web developer (STEM High School for Boys - 6th of October, Senior
+                        27)</li>
+                    <li><strong>Mrs. Randa Afify</strong> – English teacher</li>
+                    <li><strong>Mr. Tamer</strong> – Supervisor</li>
+                </ul>
+            </div>
+
+            <p class="quote">
+                <em>Your work has shaped not just a website, but a symbol of what STEM at Ismailia truly
+                    represents.</em>
+            </p>
         </div>
     </div>
 
@@ -217,13 +305,7 @@
         </div>
     </footer>
 </body>
-
-</html>
-
-<!-- Scripts -->
-
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../assets/constants/main.js"></script>
-</body>
 
 </html>

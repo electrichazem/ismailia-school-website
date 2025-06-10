@@ -2,11 +2,71 @@
 <html lang="en">
 
 <head>
+    <!-- Preconnect to Google domains for better performance -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRERH9EFJ4" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SRERH9EFJ4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEM Ismailia - Extracurriculars</title>
     <meta name="description"
-        content="Discover Ismailia STEM High School - a premier institution fostering innovation in science, technology, engineering, and mathematics.">
+        content="Beyond the classroom: Clubs, science fairs, and leadership programs at Ismailia STEM High School. Explore student activities">
+    <meta name="keywords" content="STEM clubs Egypt, robotics competition, student activities Ismailia">
+    <meta name="author" content="Ismailia STEM High School">
+    <link rel="canonical" href="https://www.ismailiastemhighschool.org/Extracurriculars/" />
+
+    <!-- Open Graph / Facebook (Social Media Sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ismailiastemhighschool.org/extracurriculars/">
+    <meta property="og:title" content="Ismailia STEM High School | Extracurriculars">
+    <meta property="og:description"
+        content="Beyond the classroom: clubs, science fairs, and leadership programs at Ismailia STEM High School. Explore student activities">
+    <meta property="og:image" content="https://www.ismailiastemhighschool.org/assets/images/school-building.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ismailia STEM High School | Extracurriculars">
+    <meta name="twitter:description"
+        content="Beyond the classroom: Clubs, science fairs, and leadership programs at Ismailia STEM High School. Explore student activities">
+    <meta name="twitter:image" content="https://www.ismailiastemhighschool.org/assets/images/school-building.png">
+
+    <!-- Favicon & Mobile Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Ismailia STEM High School | Extracurriculars ",
+  "url": "https://www.ismailiastemhighschool.org/extracurriculars/",
+  "description": "Beyond the classroom:  Clubs, science fairs, and leadership programs at Ismailia STEM High School. Explore student activities",
+  "mainEntity": {
+    "@type": "EducationalOrganization",
+    "name": "Ismailia STEM High School",
+    "logo": "https://www.ismailiastemhighschool.org/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Next to the Security Forces, Educational Complex",
+      "addressLocality": "Ismailia",
+      "addressCountry": "Egypt"
+    },
+    "telephone": "+20643498610",
+    "sameAs": [
+      "https://www.facebook.com/ismailiastem"
+    ]
+  }
+}
+</script>
 
     <!-- Preload critical resources -->
     <link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
@@ -31,7 +91,7 @@
     <!-- Header/Navigation -->
     <header class="header ">
         <div class="header__brand">
-            <img class="header__logo" src="../assets/logo.png"/>
+            <img class="header__logo" src="../assets/logo.png" />
             <h1 class="header__title">Ismailia STEM High School</h1>
         </div>
 
@@ -210,11 +270,11 @@
                 <div class="club-box">
                     <img src="../assets/images/clubs/astronomy-club.png" alt="Astronomy Club Logo">
                     <div class="club-info">
-                            <h3>Ismailia STEM Astronomy Club</h3>
-                            <p>Ismailia STEM Astronomy Club provides a thrilling opportunity for students to experience
-                                astronomy phenomenon and explore the wide universe with passion for it, offering an
-                                excellent
-                                environment for astronomy enthusiast students.</p>
+                        <h3>Ismailia STEM Astronomy Club</h3>
+                        <p>Ismailia STEM Astronomy Club provides a thrilling opportunity for students to experience
+                            astronomy phenomenon and explore the wide universe with passion for it, offering an
+                            excellent
+                            environment for astronomy enthusiast students.</p>
                     </div>
                 </div>
 
@@ -363,7 +423,7 @@
 
     </main>
 
-     <footer class="site-map">
+    <footer class="site-map">
         <div class="site-map-container">
             <div class="map-left">
                 <h2>Site map</h2>
@@ -415,7 +475,7 @@
         </div>
     </footer>
 
-    
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Constants -->
